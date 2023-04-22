@@ -6,5 +6,5 @@ Anggota :
 - Glenn Hakim
 - Alhusna Hanifah
 - Azri Harniza
-- Novia Anggreini
+- Novia Angreini
 - Putri Sakinatul Maulida
