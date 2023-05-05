@@ -57,10 +57,6 @@ int main(int banyakArgumen, char *argumen[])
 
     }else if(banyakArgumen == 3){//untuk melakukan login
 
-     char usernameinput[10],passwordinput[10];
-    strcpy(usernameinput, argumen[1]);
-    strcpy(passwordinput, argumen[2]);
-
     //membaca isi dalam file login
     FILE *fpr;
     if((fpr = fopen("database/login.bin", "rb")) == NULL){
@@ -84,7 +80,7 @@ int main(int banyakArgumen, char *argumen[])
     strcpy(username, string[0]);
     strcpy(password, string[1]);
 
-    if( (strcmp(usernameinput, username) == 0) &&(strcmp(passwordinput,password) == 0 )){
+    if( (strcmp(argumen[1], username) == 0) &&(strcmp(argumen[2],password) == 0 )){
         printf("selamat anda berhasil login !");
     }
     else{
