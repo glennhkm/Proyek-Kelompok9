@@ -91,8 +91,6 @@ int main(int banyakArgumen, char *argumen[])
         printf("\nAnda gagal login!\n");
         printf("Username atau password anda salah!\n");
     }
-    }
-
 
     //game
     char mulai[20], jawab1[20], jawab2[20], jawab3[20], jawab4[20], jawab5[20];
@@ -189,6 +187,7 @@ int main(int banyakArgumen, char *argumen[])
     }
 
     
+    }
     return 0;
 
 }
