@@ -145,7 +145,7 @@ int main(int banyakArgumen, char *argumen[])
             system("cls");
         }
         else{
-            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d");
+            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d", uang);
             printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
             uang+=0;
             exit(1);
@@ -179,7 +179,113 @@ int main(int banyakArgumen, char *argumen[])
             system("cls");
         }
         else{
-            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d");
+            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d", uang);
+            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            uang+=0;
+            exit(1);
+        }
+        
+        //Soal 3
+        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
+        printf("\n\n3. Siapakah penemu bahasa C?");
+        printf("\n\tA. Dennis Ritchie\n");
+        printf("\tB. Guido van Rossum\n");
+        printf("\tC. James Gosling\n");
+        printf("Jawaban anda (A/B/C) : ");
+        gets(jawab3);
+        fflush(stdin); 
+        while(jawab3[0]<'A' || jawab3[0]>'C' || strlen(jawab3)>1){
+            printf("Tolong masukan pilihan yang tersedia (A/B/C), gunakan huruf kapital, dan jangan menggunakan spasi!");
+            printf("\nJawaban anda (A/B/C) : ");
+            gets(jawab3);
+            fflush(stdin);
+        }
+        if(jawab3[0]== 'A'){
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            for(int i=160000; i>2; i--){
+                if(i/40000==0){
+                    continue;
+                }
+                printf("\r%d", i/40000);
+            }
+            uang+=1000000;
+            system("cls");
+        }
+        else{
+            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d", uang);
+            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            uang+=0;
+            exit(1);
+        }
+
+        //Soal 4
+        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
+        printf("\n\n4. Bahasa C merupakan bahasa tingkat apa?");
+        printf("\n\tA. Rendah\n");
+        printf("\tB. Menengah\n");
+        printf("\tC. Tinggi\n");
+        printf("Jawaban anda (A/B/C) : ");
+        gets(jawab4);
+        fflush(stdin); 
+        while(jawab4[0]<'A' || jawab4[0]>'C' || strlen(jawab4)>1){
+            printf("Tolong masukan pilihan yang tersedia (A/B/C), gunakan huruf kapital, dan jangan menggunakan spasi!");
+            printf("\nJawaban anda (A/B/C) : ");
+            gets(jawab4);
+            fflush(stdin);
+        }
+        if(jawab4[0]== 'B'){
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            for(int i=160000; i>2; i--){
+                if(i/40000==0){
+                    continue;
+                }
+                printf("\r%d", i/40000);
+            }
+            uang+=1000000;
+            system("cls");
+        }
+        else{
+            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d", uang);
+            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            uang+=0;
+            exit(1);
+        }
+
+        //Soal 5
+        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
+        printf("\n\n5. Bahasa C dikembangkan dimana?");
+        printf("\n\tA. Centrum Wiskunde & Informatica\n");
+        printf("\tB. Oracle\n");
+        printf("\tC. Bell Labs\n");
+        printf("Jawaban anda (A/B/C) : ");
+        gets(jawab5);
+        fflush(stdin); 
+        while(jawab5[0]<'A' || jawab5[0]>'C' || strlen(jawab5)>1){
+            printf("Tolong masukan pilihan yang tersedia (A/B/C), gunakan huruf kapital, dan jangan menggunakan spasi!");
+            printf("\nJawaban anda (A/B/C) : ");
+            gets(jawab5);
+            fflush(stdin);
+        }
+        if(jawab5[0]== 'C'){
+            printf("Selamat jawaban anda benar \n\n");
+            for(int i=160000; i>2; i--){
+                if(i/40000==0){
+                    continue;
+                }
+                printf("\r%d", i/40000);
+            }
+            uang+=1000000;
+            system("cls");
+             printf("\nuang yang anda bawa pulang senilai Rp%d", uang);
+            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            uang+=0;
+            exit(1);
+        }
+        else{
+            printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d, uang");
             printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
             uang+=0;
             exit(1);
