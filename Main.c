@@ -182,7 +182,7 @@ int main(int banyakArgumen, char *argumen[])
         }
         
         //Soal 3
-        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("Hadiah untuk soal ini = Rp2.000.000");
         printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
         printf("\n\n3. Siapakah penemu bahasa C?");
         printf("\n\tA. Dennis Ritchie\n");
@@ -205,7 +205,7 @@ int main(int banyakArgumen, char *argumen[])
                 }
                 printf("\r%d", i/40000);
             }
-            uang+=1000000;
+            uang+=2000000;
             system("cls");
         }
         else{
@@ -216,7 +216,7 @@ int main(int banyakArgumen, char *argumen[])
         }
 
         //Soal 4
-        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("Hadiah untuk soal ini = Rp4.000.000");
         printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
         printf("\n\n4. Bahasa C merupakan bahasa tingkat apa?");
         printf("\n\tA. Rendah\n");
@@ -239,7 +239,7 @@ int main(int banyakArgumen, char *argumen[])
                 }
                 printf("\r%d", i/40000);
             }
-            uang+=1000000;
+            uang+=4000000;
             system("cls");
         }
         else{
@@ -250,7 +250,7 @@ int main(int banyakArgumen, char *argumen[])
         }
 
         //Soal 5
-        printf("Hadiah untuk soal ini = Rp1.000.000");
+        printf("Hadiah untuk soal ini = Rp8.000.000");
         printf("\nUang yang telah anda kumpulkan = Rp%d", uang);
         printf("\n\n5. Bahasa C dikembangkan dimana?");
         printf("\n\tA. Centrum Wiskunde & Informatica\n");
@@ -273,7 +273,7 @@ int main(int banyakArgumen, char *argumen[])
                 }
                 printf("\r%d", i/40000);
             }
-            uang+=1000000;
+            uang+=8000000;
             system("cls");
              printf("\nuang yang anda bawa pulang senilai Rp%d", uang);
             printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
