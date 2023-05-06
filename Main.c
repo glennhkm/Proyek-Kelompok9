@@ -58,9 +58,9 @@ int main(int banyakArgumen, char *argumen[])
         
     }else if(banyakArgumen == 2 || banyakArgumen > 3){
         
-        printf("Gagal login !");
+        printf("\nGagal login !");
         printf("\nSilahkan login dengan cara berikut : ./FileAplikasiProgramUtama Username Password\n");
-        printf("Jika belum mempunyai akun silahkan lakukan registrasi dengan cara : ./FileAplikasiProgramUtama \n");
+        printf("Jika belum mempunyai akun silahkan lakukan registrasi dengan cara : ./FileAplikasiProgramUtama \n\n");
 
     }else if(banyakArgumen == 3){//untuk melakukan login
 
@@ -93,7 +93,7 @@ int main(int banyakArgumen, char *argumen[])
     }
     else{
         printf("\nAnda gagal login!\n");
-        printf("Username atau password anda salah!\n");
+        printf("Username atau password anda salah!\n\n");
     }
 
     }
@@ -282,12 +282,6 @@ void game(){
         }
         if(jawab5[0]== 'C'){
             printf("Selamat jawaban anda benar");
-            // for(int i=160000; i>2; i--){
-            //     if(i/40000==0){
-            //         continue;
-            //     }
-            //     printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
-            // }
             uang+=8000000;
             system("cls");
             printf("Selamat anda telah memenangkan permainan ini dan berhak membawa pulang uang sebesar Rp%d", uang);
