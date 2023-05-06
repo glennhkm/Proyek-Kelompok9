@@ -8,7 +8,7 @@ int game();
 int main(int banyakArgumen, char *argumen[])
 {
     if(banyakArgumen == 1){ //untuk melakukan registrasi
-        printf("\n\n##\tSelamat bergabung di Game \"ORANG KAYA!\" .\t\t##\n");
+        printf("\n\n##\t Selamat bergabung di Game \"ORANG KAYA!\" \t##\n");
         printf("Untuk memulai permainan Anda harus melakukan registrasi terlebih dahulu.\n");
         printf("Silahkan melakukan registrasi!\n");
         struct data{
@@ -19,13 +19,18 @@ int main(int banyakArgumen, char *argumen[])
             char password[20];
         }reg;
 
-        printf("\nNama : "); fgets(reg.nama, 50, stdin);
-        printf("Asal Negara : "); fgets(reg.negara, 50, stdin);
-        printf("Umur : "); scanf("%d", &reg.umur);
+        printf("\nNama\t\t: "); 
+        fgets(reg.nama, 50, stdin);
+        printf("Asal Negara\t: "); 
+        fgets(reg.negara, 50, stdin);
+        printf("Umur\t\t: "); 
+        scanf("%d", &reg.umur);
         getchar();
-        printf("Username: "); fgets(reg.username, 20, stdin);
+        printf("Username\t: "); 
+        fgets(reg.username, 20, stdin);
         reg.username[strcspn(reg.username, "\n")] = '\0';
-        printf("Password : "); fgets(reg.password, 20, stdin);
+        printf("Password\t: "); 
+        fgets(reg.password, 20, stdin);
         reg.password[strcspn(reg.password, "\n")] = '\0';
 
         while (strchr(reg.username, ' ') != NULL || strchr(reg.password, ' ') != NULL)
@@ -48,7 +53,6 @@ int main(int banyakArgumen, char *argumen[])
 
         fclose(fpw);
 
-        
         printf("\nSelamat, Anda berhasil melakukan registrasi!\n");
         printf("Silahkan login dengan cara berikut : ./FileAplikasiProgramUtama Username Password\n\n");
         
