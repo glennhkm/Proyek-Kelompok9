@@ -3,6 +3,8 @@
 #include<string.h>
 
 //Kelompok 9
+int game();
+
 int main(int banyakArgumen, char *argumen[])
 {
     if(banyakArgumen == 1){ //untuk melakukan registrasi
@@ -83,13 +85,21 @@ int main(int banyakArgumen, char *argumen[])
 
     if( (strcmp(argumen[1], username) == 0) &&(strcmp(argumen[2],password) == 0 )){
         printf("selamat anda berhasil login !");
+        game();
     }
     else{
         printf("\nAnda gagal login!\n");
         printf("Username atau password anda salah!\n");
     }
 
+    }
+
+    return 0;
+
+}
+
     //game
+int game(){
     char mulai[20], jawab1[20], jawab2[20], jawab3[20], jawab4[20], jawab5[20];
     int benar=0, salah=0, uang=0;
     printf("\n\nSELAMAT DATANG DI PERMAINAN \"ORANG KAYA!\"");
@@ -289,8 +299,6 @@ int main(int banyakArgumen, char *argumen[])
         }
     }
 
-    
-    }
     return 0;
 
 }
