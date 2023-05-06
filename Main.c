@@ -6,19 +6,19 @@
 int main(int banyakArgumen, char *argumen[])
 {
     if(banyakArgumen == 1){ //untuk melakukan registrasi
-        printf("\n\n##\tSelamat bergabung di Game Quis.\t\t##\n");
-        printf("Untuk menjawab kuis Anda harus melakukan registrasi terlebih dahulu.\n");
+        printf("\n\n##\tSelamat bergabung di Game \"ORANG KAYA!\" .\t\t##\n");
+        printf("Untuk memulai permainan Anda harus melakukan registrasi terlebih dahulu.\n");
         printf("Silahkan melakukan registrasi!\n");
         struct data{
             char nama[50];
-            char alamat[50];
+            char negara[50];
             int umur;
             char username[20];
             char password[20];
         }reg;
 
         printf("\nNama : "); fgets(reg.nama, 50, stdin);
-        printf("Alamat : "); fgets(reg.alamat, 50, stdin);
+        printf("Asal Negara : "); fgets(reg.negara, 50, stdin);
         printf("Umur : "); scanf("%d", &reg.umur);
         getchar();
         printf("Username: "); fgets(reg.username, 20, stdin);
@@ -51,6 +51,7 @@ int main(int banyakArgumen, char *argumen[])
         printf("Silahkan login dengan cara berikut : ./FileAplikasiProgramUtama Username Password\n\n");
         
     }else if(banyakArgumen == 2 || banyakArgumen > 3){
+        
         printf("Gagal login !");
         printf("\nSilahkan login dengan cara berikut : ./FileAplikasiProgramUtama Username Password\n");
         printf("Jika belum mempunyai akun silahkan lakukan registrasi dengan cara : ./FileAplikasiProgramUtama \n");
