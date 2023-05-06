@@ -3,7 +3,7 @@
 #include<string.h>
 
 //Kelompok 9
-int game();
+void game();
 
 int main(int banyakArgumen, char *argumen[])
 {
@@ -67,7 +67,7 @@ int main(int banyakArgumen, char *argumen[])
     //membaca isi dalam file login
     FILE *fpr;
     if((fpr = fopen("database/login.bin", "rb")) == NULL){
-        printf("gagal membuka file");
+        printf("Gagal membuka file");
         return EXIT_FAILURE;
     }
     char akun[20];
@@ -88,7 +88,7 @@ int main(int banyakArgumen, char *argumen[])
     strcpy(password, string[1]);
 
     if( (strcmp(argumen[1], username) == 0) &&(strcmp(argumen[2],password) == 0 )){
-        printf("selamat anda berhasil login !");
+        printf("Selamat anda berhasil login !");
         game();
     }
     else{
@@ -103,11 +103,11 @@ int main(int banyakArgumen, char *argumen[])
 }
 
     //game
-int game(){
+void game(){
     char mulai[20], jawab1[20], jawab2[20], jawab3[20], jawab4[20], jawab5[20];
     int benar=0, salah=0, uang=0;
     printf("\n\nSELAMAT DATANG DI PERMAINAN \"ORANG KAYA!\"");
-    printf("\nDalam permainan ini anda akan diberikan 5 pertanyaan dengan hadiah uang tunai \nyang akan terus bertambah setiap pertanyaannya");
+    printf("\nDalam permainan ini anda akan diberikan 5 pertanyaan dengan hadiah uang tunai yang akan terus bertambah setiap pertanyaannya");
     
     printf("\n\nTekan 1 untuk memulai permainan : ");
     gets(mulai);
@@ -145,19 +145,19 @@ int game(){
             fflush(stdin);
         }
         if(jawab1[0]== 'A'){
-            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n");
             for(int i=160000; i>2; i--){
                 if(i/40000==0){
                     continue;
                 }
-                printf("\r%d", i/40000);
+                printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
             }
             uang+=500000;
             system("cls");
         }
         else{
             printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d", uang);
-            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            printf("\nMohon maaf anda kurang beruntung. Terima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
             uang+=0;
             exit(1);
         }
@@ -179,12 +179,12 @@ int game(){
             fflush(stdin);
         }
         if(jawab2[0]== 'B'){
-            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n");
             for(int i=160000; i>2; i--){
                 if(i/40000==0){
                     continue;
                 }
-                printf("\r%d", i/40000);
+                printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
             }
             uang+=1000000;
             system("cls");
@@ -213,12 +213,12 @@ int game(){
             fflush(stdin);
         }
         if(jawab3[0]== 'A'){
-            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n");
             for(int i=160000; i>2; i--){
                 if(i/40000==0){
                     continue;
                 }
-                printf("\r%d", i/40000);
+                printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
             }
             uang+=2000000;
             system("cls");
@@ -247,12 +247,12 @@ int game(){
             fflush(stdin);
         }
         if(jawab4[0]== 'B'){
-            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n\n");
+            printf("Selamat jawaban anda benar, bersiaplah menjawab soal selanjutnya\n");
             for(int i=160000; i>2; i--){
                 if(i/40000==0){
                     continue;
                 }
-                printf("\r%d", i/40000);
+                printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
             }
             uang+=4000000;
             system("cls");
@@ -281,28 +281,26 @@ int game(){
             fflush(stdin);
         }
         if(jawab5[0]== 'C'){
-            printf("Selamat jawaban anda benar \n\n");
-            for(int i=160000; i>2; i--){
-                if(i/40000==0){
-                    continue;
-                }
-                printf("\r%d", i/40000);
-            }
+            printf("Selamat jawaban anda benar");
+            // for(int i=160000; i>2; i--){
+            //     if(i/40000==0){
+            //         continue;
+            //     }
+            //     printf("\rSoal selanjutnya akan dimulai dalam : %d", i/40000);
+            // }
             uang+=8000000;
             system("cls");
-             printf("\nuang yang anda bawa pulang senilai Rp%d", uang);
-            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            printf("Selamat anda telah memenangkan permainan ini dan berhak membawa pulang uang sebesar Rp%d", uang);
+            printf("\n\nTerima kasih telah memainkan \"ORANG KAYA\", sampai jumpa dan jadilah ORANG KAYA!!!");
             uang+=0;
             exit(1);
         }
         else{
             printf("\nJawaban anda salah, uang yang anda bawa pulang senilai Rp%d, uang");
-            printf("\nTerima kasih telah memainkan permainan ini, sampai jumpa dan jadilah ORANG KAYA!!!");
+            printf("\nTerima kasih telah memainkan \"ORANG KAYA\", sampai jumpa dan jadilah ORANG KAYA!!!");
             uang+=0;
             exit(1);
         }
     }
-
-    return 0;
 
 }
