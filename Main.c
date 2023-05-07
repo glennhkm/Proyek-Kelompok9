@@ -37,12 +37,15 @@ int main(int banyakArgumen, char *argumen[])
         {
             printf("\nUsername atau password tidak boleh menggunakan spasi!\n");
             printf("Silahkan masukkan ulang!\n\n");
-            printf("Username: "); fgets(reg.username, 20, stdin);
+            printf("Username: "); 
+            fgets(reg.username, 20, stdin);
             reg.username[strcspn(reg.username, "\n")] = '\0';
-            printf("Password : "); fgets(reg.password, 20, stdin);
+            printf("Password : "); 
+            fgets(reg.password, 20, stdin);
             reg.password[strcspn(reg.password, "\n")] = '\0';
         }
-
+        
+        //menyimpan inputan username dan password dalam file login
         FILE *fpw = fopen("database/login.bin", "wb");
  
         char add[2] = "@";
